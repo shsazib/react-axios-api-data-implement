@@ -28,17 +28,15 @@ const Data = () => {
 
   return (
     <>
+    <h1>Profile Id Card</h1>
       <div className="profile">
-        <button onClick={() => profileData()}>New Person</button>
         <div className="card">
-          <img src={profileImage} alt="img" style={{ width: "20%" }} />
-          <h1>{profileName}</h1>
-          <p className="title">{profileEmail}</p>
-          <p>{profileCell}</p>
-          <p>
-            <button>Contact</button>
-          </p>
+          <img src={profileImage} alt="img" />
+          <h2>{profileName}</h2>
+          <p className="title"><b>Email:</b> {profileEmail}</p>
+          <p><b>Phone:</b> {profileCell}</p>
         </div>
+        <button onClick={() => profileData()}>New Person</button>
       </div>
     </>
   );
